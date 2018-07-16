@@ -11,10 +11,12 @@
 		D3095BCD20F66A4000D0A3B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3095BCC20F66A4000D0A3B0 /* LoginViewController.swift */; };
 		D3095BCF20F6A02D00D0A3B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3095BCE20F6A02D00D0A3B0 /* User.swift */; };
 		D3095BD120F6AFD700D0A3B0 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3095BD020F6AFD700D0A3B0 /* CreateUsernameViewController.swift */; };
+		D32EC6CC20F7C35200991DA6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EC6CB20F7C35200991DA6 /* UserService.swift */; };
 		D34A46C620F559930026EA2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D34A46C520F559930026EA2A /* GoogleService-Info.plist */; };
 		D34AC0C520F57966004CF5AE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34AC0C420F57966004CF5AE /* Login.storyboard */; };
+		D3C65EFF20F9072500B0F9CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C65EFE20F9072500B0F9CF /* Constants.swift */; };
+		D3C65F0120F917AC00B0F9CF /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C65F0020F917AC00B0F9CF /* Storyboard+Utility.swift */; };
 		D3DCF4F920F54144000BA1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DCF4F820F54144000BA1A0 /* AppDelegate.swift */; };
-		D3DCF4FB20F54144000BA1A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DCF4FA20F54144000BA1A0 /* ViewController.swift */; };
 		D3DCF4FE20F54144000BA1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DCF4FC20F54144000BA1A0 /* Main.storyboard */; };
 		D3DCF50020F54145000BA1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3DCF4FF20F54145000BA1A0 /* Assets.xcassets */; };
 		D3DCF50320F54145000BA1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DCF50120F54145000BA1A0 /* LaunchScreen.storyboard */; };
@@ -26,11 +28,13 @@
 		D3095BCC20F66A4000D0A3B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D3095BCE20F6A02D00D0A3B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D3095BD020F6AFD700D0A3B0 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		D32EC6CB20F7C35200991DA6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D34A46C520F559930026EA2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D34AC0C420F57966004CF5AE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D3C65EFE20F9072500B0F9CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D3C65F0020F917AC00B0F9CF /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		D3DCF4F520F54144000BA1A0 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DCF4F820F54144000BA1A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3DCF4FA20F54144000BA1A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3DCF4FD20F54144000BA1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3DCF4FF20F54145000BA1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3DCF50220F54145000BA1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +74,6 @@
 		D34AC0BC20F575AA004CF5AE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D3DCF4FA20F54144000BA1A0 /* ViewController.swift */,
 				D3095BCC20F66A4000D0A3B0 /* LoginViewController.swift */,
 				D3095BD020F6AFD700D0A3B0 /* CreateUsernameViewController.swift */,
 			);
@@ -80,6 +83,7 @@
 		D34AC0BD20F575C6004CF5AE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D3C65F0020F917AC00B0F9CF /* Storyboard+Utility.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -102,6 +106,7 @@
 		D34AC0C020F575E0004CF5AE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D32EC6CB20F7C35200991DA6 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				D34A46C520F559930026EA2A /* GoogleService-Info.plist */,
 				D3DCF50420F54145000BA1A0 /* Info.plist */,
+				D3C65EFE20F9072500B0F9CF /* Constants.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 			files = (
 				D3095BCF20F6A02D00D0A3B0 /* User.swift in Sources */,
 				D3095BCD20F66A4000D0A3B0 /* LoginViewController.swift in Sources */,
-				D3DCF4FB20F54144000BA1A0 /* ViewController.swift in Sources */,
+				D32EC6CC20F7C35200991DA6 /* UserService.swift in Sources */,
+				D3C65F0120F917AC00B0F9CF /* Storyboard+Utility.swift in Sources */,
+				D3C65EFF20F9072500B0F9CF /* Constants.swift in Sources */,
 				D3095BD120F6AFD700D0A3B0 /* CreateUsernameViewController.swift in Sources */,
 				D3DCF4F920F54144000BA1A0 /* AppDelegate.swift in Sources */,
 			);
